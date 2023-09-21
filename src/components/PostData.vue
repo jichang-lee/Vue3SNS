@@ -1,14 +1,14 @@
 <template>
-    <div class="post">
+    <div class="post" v-for="(postData,index) in data" :key="index" >
     <div class="post-header">
       <div class="profile"></div>
-      <span class="profile-name">{{data[0].name}}</span>
+      <span class="profile-name">{{postData.name}}</span>
     </div>
     <div class="post-body"></div>
     <div class="post-content">
-      <p>{{data[0].likes}}</p>
-      <p><strong>글쓴이아이디</strong>{{data[0].content}}</p>
-      <p class="date">{{data[0].date}}</p>
+      <p>{{postData.likes}}</p>
+      <p><strong>글쓴이아이디</strong>{{postData.content}}</p>
+      <p class="date">{{postData.date}}</p>
     </div>
 </div> 
 </template>

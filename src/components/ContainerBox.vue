@@ -1,8 +1,6 @@
 <template>
     <div>
         <PostVue :data="data"/>
-        <PostVue/>
-        <PostVue/>
     </div>
 </template>
 
